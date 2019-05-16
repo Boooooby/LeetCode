@@ -1,9 +1,3 @@
-#include <iostream>
-#include <cstdlib>
-#include <cstdio>
-#include <vector>
-using namespace std;
-
 class Solution {
 public:
     vector<string> combine(vector<string> curStr, string newDigit) {
@@ -14,7 +8,8 @@ public:
         vector<string> res;
         if (curStr.size() == 0) {
             for (int i = 0; i < newDigit.size(); i++) {
-                res.push_back("" + newDigit[i]);
+                string temp = "";
+                res.push_back(temp + newDigit[i]);
             }
             return res;
         }
@@ -36,12 +31,3 @@ public:
         return res;
     }
 };
-
-int main() {
-    Solution *solution = new Solution();
-    vector<string> temp = solution->letterCombinations("234");
-    for (int i = 0; i < temp.size(); i++) {
-        cout << temp[i] << endl;
-    }
-    return 0;
-}
