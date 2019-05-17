@@ -1,7 +1,6 @@
 class Solution {
 public:
     vector<string> combine(vector<string> curStr, string newDigit) {
-
         if (newDigit.size() == 0) 
             return curStr;
 
