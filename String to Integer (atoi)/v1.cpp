@@ -1,6 +1,3 @@
-#include <iostream>
-using namespace std;
-
 class Solution {
 public:
     int myAtoi(string str) {
@@ -46,10 +43,3 @@ public:
         return sign ? sum : -sum;
     }
 };
-
-int main() {
-	Solution *solution = new Solution();
-	string str = "-91283472332";
-	cout << solution->myAtoi(str) << endl;
-	return 0;
-}
